@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  list-style-type: none;
+  margin: 0;
+}
+.header li {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.link {
+  opacity:0.6;
+  text-decoration: none;
+  margin:10px;
+  color:black;
+}
+.link:hover { opacity: 1; }
+.header .icon {
+  font-size: 1.8em;
+  padding-left: 20px;
+  color: #34495e;
+  opacity:0.5;
+}
+.header .icon:hover {
+  color: black;
+  opacity:1;
+}

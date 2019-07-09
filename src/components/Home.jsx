@@ -14,10 +14,10 @@ class Home extends React.Component  {
         console.log(file);
     }
 
-                // <Header />
     render() {
         return (
             <div className="container">
+                <Header />
                 <img className="logo" src={logo}/>
                 <p className="content">This application is an AI system that understands house styles. It's trained on many of the popular architectural home styles as well as on the images you provide here!</p>
                 <Dropzone handleFileInput={this.handleFileInput}/>
