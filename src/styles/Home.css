@@ -1,0 +1,14 @@
+.container {
+	padding:50px 200px 0 200px;
+}
+.content {
+	font-weight:100;
+	margin:0px 50px 50px 50px;
+	line-height:1.5em;
+}
+.logo {
+	position: relative;
+	width:200px;
+	left:50%;
+	transform: translateX(-50%);
+}
