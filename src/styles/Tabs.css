@@ -1,0 +1,202 @@
+.container {
+	padding:50px 100px;
+}
+.content {
+	text-align: left;
+	font-weight:100;
+	margin:0px 50px 30px 50px;
+	line-height:1.5em;
+}
+.logo {
+	position: relative;
+	width:200px;
+	left:50%;
+	transform: translateX(-50%);
+}
+
+
+html {
+  background: #f5f7f8;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  padding: 20px 0;
+}
+
+.band {
+  width: 90%;
+  max-width: 1240px;
+  margin: 0 auto;
+  
+  display: grid;
+  
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  
+}
+
+@media only screen and (min-width: 1000px) {
+  .band {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/* card */
+
+.card {
+  min-height: 100%;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #444;
+  position: relative;
+  top: 0;
+  transition: all .1s ease-in;
+}
+
+.card:hover {
+  top: -2px;
+  box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+}
+
+.card article {
+  padding: 20px;
+  display: flex;
+  
+  flex: 1;
+  justify-content: space-between;
+  flex-direction: column;
+  
+}
+.card .thumb {
+  padding-bottom: 60%;
+  background-size: cover;
+  background-position: center center;
+}
+
+.card p { 
+  flex: 1; /* make p grow to fill available space*/
+  line-height: 1.4;
+}
+
+/* typography */
+h1 {
+  font-size: 20px;
+  margin: 0;
+  color: #333;
+}
+
+.links {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: .05em;
+  margin: 2em auto 0 auto;
+  padding:10px 50px;
+  text-align: left;
+  width:90%;
+  max-width:1240px;
+}
+.links a {
+  padding:10px;
+  color: #999;
+  text-decoration: none;
+}
+.links h2 {
+	margin:0;
+	color:#7f8c8d;
+}
+.links span {
+	color:#7f8c8d;
+}
+
+.item-1 .thumb { background-image: url('../assets/capecod.jpg'); }
+.item-2 .thumb { background-image: url('../assets/colonial.jpg'); }
+.item-3 .thumb { background-image: url('../assets/modern.jpg'); }
+.item-4 .thumb { background-image: url('../assets/craftsman.jpg'); }
+.item-5 .thumb { background-image: url('../assets/georgian.jpg'); }
+.item-6 .thumb { background-image: url('../assets/victorian.jpg'); }
+.item-7 .thumb { background-image: url('../assets/spanish.jpg'); }
+.item-8 .thumb { background-image: url('../assets/tudor.jpg'); }
+
+h1.title {
+	text-align: center;
+	font-size:2em;
+	margin-bottom:30px;
+}
+
+.contact-info-header {
+  display:inline;
+}
+.contact-info {
+    margin:20px;
+}
+
+form {
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #f4f7f8;
+  border-radius: 8px;
+}
+
+h1 {
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+
+div[type="text"],
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="submit"],
+textarea,
+select {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  margin-bottom: 30px;
+  resize:none;
+}
+label {
+  font-weight:600;
+  display: block;
+  margin-bottom: 8px;
+}
+
+label.light {
+  font-weight: 300;
+  display: inline;
+}
+
+@media screen and (min-width: 480px) {
+  form {
+    max-width: 480px;
+  }
+}
+
+#emailInput a {
+  text-decoration: none;
+  color: #8a97a0;
+  cursor:pointer;
+  transition:all 0.15s ease;
+}
+#emailInput:hover {
+  color:black;
+}

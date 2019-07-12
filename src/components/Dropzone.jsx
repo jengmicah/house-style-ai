@@ -1,6 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import ReactDOMServer from 'react-dom/server';
 import DropzoneComponent from 'react-dropzone-component';
 
 import '../styles/dropzone-theme.css';
@@ -10,7 +8,6 @@ export default class Dropzone extends React.Component {
     constructor(props) {
         super(props);
 
-        let currentFile = null;
         // For a full list of possible configurations,
         // please consult http://www.dropzonejs.com/#configuration
         this.djsConfig = {

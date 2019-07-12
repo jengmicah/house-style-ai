@@ -4,6 +4,7 @@ import './index.css';
 
 import Home from './components/Home';
 import About from './components/About';
+import Styles from './components/Styles';
 import Contact from './components/Contact';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
      <div>
       <Route exact path="/" component={Home} />
       <Route exact path="/about" component={About} />
+      <Route exact path="/styles" component={Styles} />
       <Route exact path="/contact" component={Contact} />
      </div>
     </HashRouter>

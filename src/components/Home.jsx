@@ -1,10 +1,10 @@
 import React from 'react';
 import Dropzone from './Dropzone';
-import '../styles/Home.css';
+import '../styles/Tabs.css';
 import logo from '../assets/logo.png';
 import Header from './Header';
 
-class Home extends React.Component  {
+export default class Home extends React.Component  {
     constructor(props){
         super(props);
         this.state = {};
@@ -18,12 +18,10 @@ class Home extends React.Component  {
         return (
             <div className="container">
                 <Header />
-                <img className="logo" src={logo}/>
+                <img alt="logo" className="logo" src={logo}/>
                 <p className="content">This application is an AI system that understands house styles. It's trained on many of the popular architectural home styles as well as on the images you provide here!</p>
                 <Dropzone handleFileInput={this.handleFileInput}/>
             </div>
         )
     }
 }
-
-export default Home;
