@@ -29,11 +29,13 @@ export default class Dropzone extends React.Component {
                 if (this.dropzone.files.length > 1) 
                     this.dropzone.removeFile(this.dropzone.files[0]);
             }
-            console.log('Uploaded', file);
+            console.log('Uploaded', file.name);
             this.props.handleFileInput(file);
         }
-        this.removedfile = file => console.log('Removing...', file);
-
+        this.removedfile = file => {
+            console.log('Removing...', file);
+            this.props.refresh();
+        }
         this.dropzone = null;
     }
 
