@@ -17,7 +17,8 @@ export default class Home extends React.Component  {
     handleFileInput = (file) => {
         console.log("Do something with the file: ", file.name);
         // Make call to endpoint and get prediction/confidence value
-        this.setState({confidence: Math.random().toFixed(2), classification: 'Colonial'});
+        let classes = ['Cape Cod', 'Colonial', 'Modern and Contemporary', 'Craftsman', 'Georgian', 'Victorian and Queen Anne', 'Spanish', 'Tudor']
+        this.setState({confidence: Math.random().toFixed(2), classification: classes[Math.floor(Math.random()*8)]});
     }
 
     refreshRes = () => {
