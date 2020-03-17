@@ -1,5 +1,6 @@
 .container {
-	padding:50px 100px;
+  width:750px;
+  margin:auto;
 }
 .content {
 	text-align: left;
@@ -199,4 +200,16 @@ label.light {
 }
 #emailInput:hover {
   color:black;
+}
+
+#prediction {
+  text-align: center;
+  /* background:#dedede; */
+  border:5px solid #dedede;
+  padding:30px;
+  margin-top:30px;
+  border-radius:10px;
+}
+#classification {
+  margin:10px 0 15px 0;
 }
