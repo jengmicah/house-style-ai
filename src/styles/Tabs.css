@@ -202,14 +202,17 @@ label.light {
   color:black;
 }
 
-#prediction {
+.prediction {
   text-align: center;
   /* background:#dedede; */
   border:5px solid #dedede;
-  padding:30px;
-  margin-top:30px;
+  padding:10px;
+  margin-top:10px;
   border-radius:10px;
 }
 #classification {
-  margin:10px 0 15px 0;
+  margin:10px 0 10px 0;
+}
+#rest div#classification {
+  display:inline;
 }
