@@ -67,6 +67,7 @@ export default class Home extends React.Component  {
                 <Header />
                 <img alt="logo" className="logo" src={logo}/>
                 <p className="content">This application is an AI system that understands house styles. It's trained on many of the popular architectural home styles as well as on the images you provide here!</p>
+                <button id="random" onClick={this.handleFileInput}>Generate Randomness</button>
                 <Dropzone handleFileInput={this.handleFileInput} refresh={this.refreshRes}/>
                 <div id="predict-container">{this.prediction_output}</div>
             </div>
