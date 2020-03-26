@@ -68,7 +68,7 @@ export default class Home extends React.Component  {
                 <img alt="logo" className="logo" src={logo}/>
                 <p className="content">This application is an AI system that understands house styles. It's trained on many of the popular architectural home styles as well as on the images you provide here!</p>
                 <Dropzone handleFileInput={this.handleFileInput} refresh={this.refreshRes}/>
-                <div>{this.prediction_output}</div>
+                <div id="predict-container">{this.prediction_output}</div>
             </div>
         )
     }
